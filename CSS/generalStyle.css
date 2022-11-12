@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;800&family=VT323&display=swap%27');
+
+@keyframes TextColorChange {
+    0% 
+    {
+        color: var(--pink);
+    }
+    25%
+    {
+        color: #0cf1ff;
+    }
+    50%
+    {
+        color :#ffeb57;
+    }
+    75%
+    {
+        color: #ff0040;
+    }
+    100%
+    {
+        color: var(--pink);
+    }
+}
+
+@keyframes ButtonColorChange {
+    0% 
+    {
+        background-color: var(--second-color);
+    }
+    25%
+    {
+        background-color: #0cf1ff;
+    }
+    50%
+    {
+        background-color :#ffeb57;
+    }
+    75%
+    {
+        background-color: #ff0040;
+    }
+    100%
+    {
+        background-color: var(--pink);
+    }
+}
+
+@keyframes ButtonUp {
+    0% 
+    {
+        margin-bottom:20px ;
+    }
+    50%
+    {
+        margin-bottom:30px ;
+    }
+    100% 
+    {
+        margin-bottom:20px ;
+    }
+}
+
+@keyframes cardInfo {
+    0% 
+    {
+        visibility: hidden;
+    }
+    100%
+    {
+        visibility: visible;
+    }
+}
+
+@keyframes ButtonAnimation {
+    0% 
+    {
+        margin-bottom:20px ;
+    }
+    100%
+    {
+        margin-bottom:30px ;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --container-color: #1a1e1a;
+    --pink: #db3ffd;
+    --text-color: #172317;
+    --bg-color: #ffffff;
+    --header-bg-color : #03193f;
+    --red:#ff0040;
+} 
+/*------------------------------------------*/
+/*Hidden Animations*/
+
+.hidden {
+    opacity:0;
+    filter:blur(5px);
+    transform:translateX(-100%);
+    transition:all 1.5s;
+}
+
+.title-hidden {
+    opacity:0;
+    transition:all 2.5s;
+}
+
+@media(prefers-reduced-motion)
+{
+    .hidden {
+        transition: none;
+    } 
+    .title-hidden {
+        transition: none;  
+    }
+}
+
+.show {
+    opacity:1;
+    filter:blur(0px);
+    transform:translateX(0);
+}
+
+.card-container:nth-child(1) {
+    transition-delay:200ms;
+}
+.card-container:nth-child(2) {
+    transition-delay:800ms;
+}
+.card-container:nth-child(3) {
+    transition-delay:1400ms;
+}
+
+/*------------------------------------------*/
+
+body {
+    margin: 0;
+    width:100vw;
+    position: relative;
+    background-color:#f8f9fa;
+}
+a{
+    text-decoration: none;
+}
+/*NavBar*/
+nav {
+    top : 0;
+    width: 100%;
+  padding: 12px 2px;
+    /*background-color: #0cf1ff;*/
+}
+.dom :hover{
+    color:#03193f;
+}
+nav.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  padding: 12px 2px;
+  transition : 0.3s ;
+  background-color: #e7ecff;
+}
+nav.blog {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  padding: 12px 2px;
+  transition : 0.3s ;
+  background-color: #212529;
+}
+nav.font-color a
+{
+    color:#212529 ;
+}
+
+.navbar-brand {
+    font-family: 'Poppins';
+    font-weight:bold;
+    width: 100px;
+}
+
+.navbar-brand #AI-color{
+    color: var(--second-color);
+    animation: TextColorChange 10s linear infinite;
+}
+
+.nav-link
+{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-dark 
+{
+    background-color: #212529;
+}
+
+/*------------------------------------------*/
+
+/* Header (hero) */
+
+#hero
+{
+    padding-top: 20px;
+}
+
+.hero-title
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    font-size:80px;
+    animation: TextColorChange 10s linear infinite;
+}
+
+.hero-text
+{
+    font-family: 'Poppins', sans-serif;
+    border-left: 1px solid #e01064;
+    width: 75%;
+    color: #231c62;
+}
+
+.hero-btn
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e01064;
+    color :white;
+    padding:12px 55px;
+    border-radius:12px;
+    font-size:20px;
+}
+
+.hero-btn:hover {
+    color:#e01064;
+    background-color :none;
+    border: 1px solid #e01064;
+
+}
+
+/*------------------------------------------*/
+
+/*Decoration*/
+
+.yellow-line {
+    border-top: 10px solid #ffeb57;
+    border-radius: 15px;
+    width: 40px; 
+}
+.blue-line {
+    border-top: 10px solid #4b81ee;
+    border-radius: 15px;
+    width: 40px; 
+}
+
+/*------------------------------------------*/
+
+/* About */
+
+.section-title {
+    color:#51429b;
+    font-family: 'Poppins', sans-serif;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.section-paragraph {
+    font-family: 'Poppins', sans-serif;
+    color: #231c62;
+    font-size:20px;
+}
+
+.colored-words {
+    color :#e01064;
+}
+/*------------------------------------------*/
+
+/* Team */ 
+
+.team-section 
+{
+    background-color:#e7ecff;
+    width: 75%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.team-card {
+    border:none;
+}
+ 
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    color: #51429b;
+    font-size: 22px;
+}
+
+.Founder-text {
+    color:#e01064;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+}
+
+.card-text { display:flex;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+    color: #231c62;
+    font-size:15px;
+}
+
+.Button {
+    background-color :#e01064;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Button:hover {
+    color:#e01064;
+    background-color :none;
+    border: 1px solid #e01064;
+}
+.social{
+    align-items:center;
+        justify-content:space-around;
+        margin: 5px;
+
+}
+.bx{
+    font-size:1.4rem;
+}
+/*------------------------------------------*/
+
+/* Discord */
+
+.discord-btn 
+{
+    border: 1px solid #e01064;
+    width:250px;
+    font-family: 'Poppins', sans-serif;
+    color:#e01064;
+}
+
+.discord-btn:hover {
+    background-color:#e01064 ;
+    color:white;
+}
+
+
+/* footer */
+.footer {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 0 ;
+}
+.footer h4{
+    font-size:0.93rem;
+}
+.social{
+    display:flex;
+    align-items:center;
+    column-gap: 1rem;
+}
+.social .bx{
+    font-size:1.4rem;
+    color: var(--text-color);
+}
+.social .bx:hover{
+    color: var(--second-color);
+    transition: 0.3s all linear;
+}
+@media  (max-width:1060px){
+    .container{
+        
+        margin: 0 auto;
+        width: 95%;
+    }
+    }
+
+    @media  (max-width:800px){
+   .nav{
+    padding:14px 0;
+   }
+   .sub-heading{
+    margin-top: 30px ;
+    font-size:1.3rem;
+        text-align:right;
+
+}}
+@media  (max-width:768px){
+   .nav{
+    padding:10px 0;
+   }
+   section{
+    padding:2rem 0;
+   }
+    
+   .header-title{
+    font-size: 2rem;
+   }
+   
+   
+
+   .footer{
+    flex-direction: column;
+    row-gap: 1rem;
+    padding:20px 0;
+    text-align: center;
+    padding: 30px 0;
+   }
+}
