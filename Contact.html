@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="Imgs/Logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreBrainz | Contact-us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/generalStyle.css">
+    <link rel="stylesheet" href="CSS/ContactUs.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md  navbar-light text-dark">
+        <div class="container">
+            <a href="Home.html" class="navbar-brand">COREBR<span Id="AI-color">AI</span>NZ</a>
+            <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainmenu"
+            >
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+            <div class="collapse navbar-collapse" id="mainmenu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="Home.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">BLOG</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">TEAM</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">CONTACT-US</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5  bg-light">
+        <!-- Contact Us -->
+        <section class="py-5"> 
+            <div class="container py-2">
+                <!-- Contact Us Title -->
+                <h2 class="section-title  text-center title-hidden">CONTACT-US</h2>
+                <!--Decoration-->
+                <div class="row py-3" >
+                    <div class="d-flex justify-content-center">
+                        <div class="yellow-line m-1"></div>
+                        <div class="blue-line m-1"></div>
+                    </div>
+                </div>
+                <!--Contact us Paragraph-->
+                <div class="row py-3 title-hidden text-center">
+                    <p class="section-paragraph lead">You can contact us in case you want any <span class="colored-words">professional work</span> with us or <span class="colored-words">help</span>.
+                </div>
+                <!--From Row-->>
+                <div class="row py-4 title-hidden d-flex justify-content-center">
+                    <form action="https://formsubmit.co/let.corebrains@gmail.com" method="POST"  class="w-50 d-flex justify-content-center  contact_form">
+                        <div>
+                          <div class="form-group">
+                            <label for="userName">NAME</label>
+                            <input type="text" class="form-control" id="userName"  placeholder="You name">
+                          </div>
+                          <input type="hidden" name="_subject" value="New submission!">
+                          <div class="form-group ">
+                            <label for="InputEmail">EMAIL</label>
+                            <input type="email" name="email" class="form-control" id="InputEmail" placeholder="Enter email" required>
+                          </div>
+                          <!-- <input type="hidden" name="_captcha" value="false"> --> 
+                          <div class="form-group">
+                            <label>MESSAGE</label> <br>
+                            <textarea class="form-control" type="text" name="message" id="YourMSG" placeholder="Your Message..."></textarea>
+                          </div>
+                          <input type="hidden" name="_next" value="https://c0rebrains.github.io/Blogs/">
+                          <button  id="boutn" class="Button sumbit-btn btn  m-3">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+    <footer class="text-center text-white bg-light">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="social-btn btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-facebook"></i></a>
+      
+            
+            <!-- Instagram -->
+            <a
+              class="social-btn btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+            <i class="bi bi-instagram"></i>
+            </a>
+            
+            <!-- Discord -->
+            <a
+              class="social-btn btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-discord"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright-container text-center text-dark p-3">
+    <p>&#169; COREBRAINZ All Rights Reserved</p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
