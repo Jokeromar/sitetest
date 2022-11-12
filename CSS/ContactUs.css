@@ -44,21 +44,22 @@ textarea:focus
 
 .sumbit-btn 
 {
-    width:400px;
+    width:380px;
 }
 
-@media  (max-width:768px){
+@media  (max-width:750px){
     *{
-    margin: 0;
-    padding: 0;
-
+   margin: 0;
 }
 body{
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
 }
    .nav{
-    padding:10px 0;
+    float: left;
+    padding:10px ;
+    width:100%;
    }
    section{
     padding:2rem 0;
@@ -76,6 +77,17 @@ form{
     display: flex;
     position: relative;
     align-items: center;
+}
+.btndiv{
+  position: absolute;
+    align-items: center;
+  margin-left:30px;
+
+    justify-content: center;
+}
+.sumbit-btn 
+{   
+    width:300px;
 }
    .footer{
     flex-direction: column;
